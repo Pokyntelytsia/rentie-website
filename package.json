@@ -1,5 +1,5 @@
 {
-  "name": "node-js-getting-started",
+  "name": "rentie",
   "version": "0.3.0",
   "description": "A sample Node.js app using Express 4",
   "engines": {
@@ -10,7 +10,7 @@
     "start:server": "node server/index.js",
     "test:server": "node server/test.js",
     "start:client": "react-scripts start",
-    "build:client": "react-scripts build",
+    "build": "react-scripts build",
     "test:client": "react-scripts test",
     "eject:client": "react-scripts eject"
   },
