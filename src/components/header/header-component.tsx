@@ -15,8 +15,15 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     title: {
       flexGrow: 1,
-      textAlign: "left"
+      textAlign: "left",
+      textTransform: 'uppercase'
     },
+    mainLogo: {
+      width: '40px',
+      height: '40px',
+      marginRight: '12px',
+      marginBottom: '12px'
+    }
 
   }),
 );
@@ -31,7 +38,9 @@ const HeaderComponent: FC<HeaderProperties> = props => {
     <ThemeProvider theme={mainTheme}>
       <AppBar position="static">
         <Toolbar>
-
+          <svg className={classes.mainLogo}>
+            <use href="/assets/sprite.svg#main-logo"></use>
+          </svg>
           <Typography variant="h6" className={classes.title}>
             Rentie
           </Typography>
